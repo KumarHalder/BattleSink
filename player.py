@@ -1,8 +1,7 @@
-class board:
+class player:
     def __init__(self,name, health=3):
         #self.ownShip = [[0 for i in range(8)] for j in range(8)]
         self.name = name
-        self.opponentShip =  [[0 for i in range(8)] for j in range(8)]
         self.opponentBoard =  [[0 for i in range(8)] for j in range(8)]
         self.opponentShipCoordinates = []
         self.opponentHealth = health
@@ -13,14 +12,15 @@ class board:
             return False
         #ship placed horizontally
         if isHorizontal:
+            #Out of board
             if x > 6 or x < 1:
                 print("invalid position")
                 return False
             if y > 7 or y < 0:
                 print("invalid position")
                 return False
+            #Set ship position
             for i in range(-1,2):
-                self.opponentShip[y][x+i]='z'
                 self.opponentShipCoordinates.append([x+i,y])
         #ship placed vertically
         else:
@@ -31,10 +31,10 @@ class board:
                 print("invalid position")
                 return False
             for i in range(-1,2):
-                self.opponentShip[y+i][x]='z'
                 self.opponentShipCoordinates.append([x, y+i ])
         print(self.opponentShipCoordinates)
         return True
+
     def isOpponentShipAtPosition(self,x,y):
         for coordinate in self.opponentShipCoordinates:
             if coordinate[0] == x and coordinate[1] == y :
@@ -44,13 +44,14 @@ class board:
         if (self.opponentBoard[y][x] != 0 ):
             return True
         return False
+
     def shotPoint(self,x,y):
         #check if move is invalid
 
         #miss
         if self.isOpponentShipAtPosition(x,y) == False:
             print("miss")
-            self.opponentBoard[y][x] = "miss"
+            self.opponentBoard[y][x] = "X"
 
         #Hit
         else:
@@ -59,7 +60,9 @@ class board:
             self.opponentBeenShot()
 
 
-        print(self.opponentBoard)
+        for x in self.opponentBoard:
+            print(x)
+
 
     def opponentBeenShot(self):
         self.opponentHealth -= 1
