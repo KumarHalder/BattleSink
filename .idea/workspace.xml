@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3939c92-8036-47a4-aae6-e41ac560518b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Car.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/battleShip.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/battleShip.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gameManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/gameManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,13 +50,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="15" />
-          <entry key="py" value="2379" />
+          <entry key="py" value="2931" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="2379" />
+          <entry key="Python" value="2931" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -76,30 +73,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gameManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="78" column="34" lean-forward="true" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+            <state relative-caret-position="-409">
+              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
               <folding>
-                <marker date="1589444562478" expanded="true" signature="1861:2000" ph="..." />
-                <marker date="1589444562478" expanded="true" signature="2021:2164" ph="..." />
-                <marker date="1589444562478" expanded="true" signature="2203:2366" ph="..." />
+                <marker date="1589446810081" expanded="true" signature="584:713" ph="..." />
+                <marker date="1589446810081" expanded="true" signature="979:1314" ph="..." />
+                <marker date="1589446810081" expanded="true" signature="2819:2828" ph="..." />
+                <marker date="1589446810081" expanded="true" signature="4145:4284" ph="..." />
+                <marker date="1589446810081" expanded="true" signature="4305:4448" ph="..." />
+                <marker date="1589446810081" expanded="true" signature="4487:4650" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+            <state relative-caret-position="251">
+              <caret line="73" column="25" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
               <folding>
                 <element signature="e#1754#1877#0" />
                 <element signature="e#2215#2286#0" />
-                <element signature="e#2319#2443#0" />
-                <marker date="1589444346109" expanded="false" signature="1641:1732" ph="..." />
+                <marker date="1589447022183" expanded="false" signature="1641:1732" ph="..." />
               </folding>
             </state>
           </provider>
@@ -156,6 +155,9 @@
       <find>board</find>
       <find>opponentShip</find>
       <find>isThisMoveUSedPreviously</find>
+      <find>invalid</find>
+      <find>playerXmove</find>
+      <find>playerYmove</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,8 +171,8 @@
         <option value="$PROJECT_DIR$/test_car.py" />
         <option value="$PROJECT_DIR$/board.py" />
         <option value="$PROJECT_DIR$/test_board.py" />
-        <option value="$PROJECT_DIR$/player.py" />
         <option value="$PROJECT_DIR$/gameManager.py" />
+        <option value="$PROJECT_DIR$/player.py" />
       </list>
     </option>
   </component>
@@ -379,6 +381,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -434,27 +437,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player.py">
+    <entry file="file://$PROJECT_DIR$/gameManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+        <state relative-caret-position="-409">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
           <folding>
-            <element signature="e#1754#1877#0" />
-            <element signature="e#2215#2286#0" />
-            <element signature="e#2319#2443#0" />
-            <marker date="1589444346109" expanded="false" signature="1641:1732" ph="..." />
+            <marker date="1589446810081" expanded="true" signature="584:713" ph="..." />
+            <marker date="1589446810081" expanded="true" signature="979:1314" ph="..." />
+            <marker date="1589446810081" expanded="true" signature="2819:2828" ph="..." />
+            <marker date="1589446810081" expanded="true" signature="4145:4284" ph="..." />
+            <marker date="1589446810081" expanded="true" signature="4305:4448" ph="..." />
+            <marker date="1589446810081" expanded="true" signature="4487:4650" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameManager.py">
+    <entry file="file://$PROJECT_DIR$/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="78" column="34" lean-forward="true" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+        <state relative-caret-position="251">
+          <caret line="73" column="25" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
           <folding>
-            <marker date="1589444562478" expanded="true" signature="1861:2000" ph="..." />
-            <marker date="1589444562478" expanded="true" signature="2021:2164" ph="..." />
-            <marker date="1589444562478" expanded="true" signature="2203:2366" ph="..." />
+            <element signature="e#1754#1877#0" />
+            <element signature="e#2215#2286#0" />
+            <marker date="1589447022183" expanded="false" signature="1641:1732" ph="..." />
           </folding>
         </state>
       </provider>

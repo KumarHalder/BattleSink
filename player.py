@@ -71,6 +71,7 @@ class player:
 
     def opponentDestroyed(self):
         if (self.opponentHealth <= 0):
+            print("\n\n")
             print("...... ",self.name + " have won......")
             return True
         return False
